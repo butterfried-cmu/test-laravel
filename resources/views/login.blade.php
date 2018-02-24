@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Bobby</title>
+        <title>Login</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -38,7 +38,9 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">You can call me<br><b>'Bobby'</b></div>
+                <div class="title">Login</div><br>
+                Username : <input type='text' name='username'/>
+                Password : <input type='password' name='password'/>
             </div>
         </div>
     </body>
