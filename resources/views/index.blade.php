@@ -5,33 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- UIkit CSS -->
+  <link href="{{ asset('css/uikit.css') }}" rel="stylesheet" />
+  <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+
   <title>Vue.js Navigation Menu</title>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
-  <script>
-  // Creating a new Vue instance and pass in an options object.
-  var demo = new Vue({
-
-    // A DOM element to mount our view model.
-    el: '#main',
-
-    // Define properties and give them initial values.
-    data: {
-      active: 'home'
-    },
-
-    // Functions we will be using.
-    methods: {
-      isActive: function (menuItem) {
-        return this.activeItem === menuItem
-      },
-      makeActive: function(item){
-        // When a model is changed, the view will be automatically updated.
-        this.active = item;
-      }
-    }
-  });
-</script>
 
 </head>
 <body>
@@ -65,6 +47,7 @@
 
     <div class="uk-container">
 
+      <p>You chose <b>{{active}}</b></p>
       <br>test<br>test
       <br>test<br>test
       <br>test<br>test
@@ -93,5 +76,31 @@
 
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+  <script>
+  // Creating a new Vue instance and pass in an options object.
+  var demo = new Vue({
+
+    // A DOM element to mount our view model.
+    el: '#main',
+
+    // Define properties and give them initial values.
+    data: {
+      active: 'home'
+    },
+
+    // Functions we will be using.
+    methods: {
+      isActive: function (menuItem) {
+        return this.activeItem === menuItem
+      },
+      makeActive: function(item){
+        // When a model is changed, the view will be automatically updated.
+        this.active = item;
+      }
+    }
+  });
+</script>
 </body>
 </html>
