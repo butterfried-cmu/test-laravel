@@ -1,0 +1,37 @@
+html{
+  background-color: #DDD;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background-color: #533B75;
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+}
+
+.uk-navbar-nav > li > a {
+  color: #FFF;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a.uk-open {
+  color: #FFF;
+  outline: none;
+  background-color: #b053b2;
+}
+
+.uk-navbar-nav > li > a:focus{
+  color: #FFF;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+
+.uk-card-secondary.header{
+  background-color: #fff9ff;
+}
+
+.uk-card-secondary.header h3{
+  color: #533B75;
+}

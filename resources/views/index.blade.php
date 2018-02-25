@@ -10,8 +10,8 @@
   <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
 
   <!-- UIkit JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+  <script src="{{ asset('js/uikit.js') }}"></script>
+  <script src="{{ asset('js/uikit-icons.js') }}"></script>
 
   <title>Vue.js Navigation Menu</title>
 
