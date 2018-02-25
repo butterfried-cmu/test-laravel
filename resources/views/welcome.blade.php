@@ -37,9 +37,6 @@
     </head>
     <body>
         <div class="container">
-          <?php
-          require 'resources/views/h.php';
-          ?>
             <div class="content">
                 <div class="title">You can call me<br><b>'Bobby'</b></div>
             </div>
