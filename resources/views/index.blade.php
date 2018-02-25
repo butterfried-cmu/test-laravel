@@ -47,7 +47,6 @@
 
     <div class="uk-container">
 
-      <p>You chose <b>{{active}}</b></p>
       <br>test<br>test
       <br>test<br>test
       <br>test<br>test
